@@ -1,0 +1,12 @@
+@use "../../variables" as v;
+
+select {
+  background-color: v.$primary;
+  border: solid 1px v.$primary;
+  padding: 4px;
+  border-radius: 4px;
+
+  &:focus {
+    outline-color: v.$lighter;
+  }
+}

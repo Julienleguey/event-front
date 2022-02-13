@@ -1,0 +1,22 @@
+@use "../../variables" as v;
+
+button {
+  cursor: pointer;
+  border-radius: 2px;
+  border: solid 2px v.$primary;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+  background-color: v.$primary;
+  padding: 0.5rem 1rem;
+
+  &:focus {
+    outline-color: v.$lighter;
+  }
+
+  &:disabled {
+    background-color: v.$light;
+    border-color: v.$light;
+    color: v.$dark;
+    cursor: not-allowed;
+  }
+}

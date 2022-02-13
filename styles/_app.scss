@@ -1,0 +1,66 @@
+@use "variables" as v;
+
+body {
+  color: v.$lighter;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: v.$darker;
+  display: flex;
+}
+
+a:first-letter,
+h1:first-letter,
+h2:first-letter,
+h3:first-letter,
+h4:first-letter,
+h5:first-letter,
+h6:first-letter {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+#__next {
+  flex: 1;
+  max-width: 100%;
+}
+
+#full-app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+#content-container {
+  width: 100%;
+  max-width: 1232px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  .content-main {
+    padding: 32px 16px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}

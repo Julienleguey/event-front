@@ -1,0 +1,33 @@
+@use "../variables" as v;
+
+.comment-title-container {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.comment-list-container {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.comment-card-container {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: solid 2px v.$primary;
+  border-radius: 8px;
+
+  .email {
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+}
+
+.comment-creation-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.comment-submit-btn-container {
+  display: flex;
+  justify-content: center;
+}
